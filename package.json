@@ -1,0 +1,28 @@
+{
+  "name": "rodynne branch",
+  "version": "1.0.0",
+  "description": "Тернопільська філія",
+  "main": "index.html",
+  "scripts": {
+    "start": "jekyll build && gulp && rimraf _site && jekyll serve"
+
+  },
+  "author": "dedvitalik",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "rimraf": "^5.0.0"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

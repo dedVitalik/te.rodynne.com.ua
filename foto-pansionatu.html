@@ -1,0 +1,23 @@
+---
+permalink: foto-pansionatu/
+layout: default
+title: Фото пансіонату
+description: Фотографії пансіонату
+breadcrumbs: Фото пансіонату
+---
+ 
+  <section class="photo-sl">
+    <div class=" _container">
+      <div class="slider">
+		  {% for img in site.data.gallery.all-in.urls %}
+		  <div class="item">
+		  <img src="{{img}}" alt="{{site.data.gallery.all-in.alt}}">
+		  </div>
+		  {% endfor %}
+		 <a class="prev" onclick="minusSlide()">&#10094;</a>
+		 <a class="next" onclick="plusSlide()">&#10095;</a>
+	  </div>
+	<a class="na-golovnu"  href="/">На головну</a>
+    </div>
+  </section>
+  <script src="/js/slider.js"></script>

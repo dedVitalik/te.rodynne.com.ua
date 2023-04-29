@@ -1,0 +1,77 @@
+---
+permalink: /ru/contacts/
+layout: default-ru
+title: Как нас найти - Родинне тепло
+description: Как нас найти на карте
+breadcrumbs: Как нас найти
+---
+
+<section class="contacts">
+    <script>
+      function openMapsLink(destinationNumber) {
+        const destinations = {
+          1: ['49.590349', '25.575007'],
+          2: ['49.55724518988018', '25.660944562105968']
+        }
+        const destinationLabel = 'Пансионат для пожилых "Родинне тепло"';
+        if (/iPhone|iPad|iPod|Macintosh/i.test(navigator.userAgent)) {
+          window.location.href = 'http://maps.apple.com/?daddr=' + destinations[destinationNumber][0] + ',' + destinations[destinationNumber][1];
+        } else {
+          window.location.href = 'https://www.google.com/maps?q=' + destinations[destinationNumber][0] + ',' + destinations[destinationNumber][1] + '(' + destinationLabel + ')';
+        }
+      }
+    </script>
+    <div class=" _container">
+        <div class="contacts__main">
+            <div class="contant__content">
+                <div class="about__text section-text">
+                    <p>Дом престарелых <span class="text-bold">“Родинне тепло”</span>
+                        находится в уютном селе Белая, сразу возле Тернополя. Другая наша локация - с.Байковцы,
+                        также сразу возле Тернополя</p>
+                    <p>Вы можете выбрать более удобный для Вас вариант, расстояние до центра
+                        Тернополя 4 или 6 км</p>
+                    <p>Наши дома – это 3 и 4-этажный дом, с приватной обустроенной территорией и садом,
+                        размещенный в тихом и зеленом месте.</p>
+                </div>
+                <div class="about__text section-text">
+                    <p>
+                        <span class="text-bold">Тернопольская обл.</span><br>
+                        <span class="text-bold">с. Белая</span><br>
+                        <span class="text-bold">ул. Надежды, 6</span><br>
+                        <br>
+                        <span class="text-bold">Тернопольская обл.</span><br>
+                        <span class="text-bold">с. Байковцы</span><br>
+                        <span class="text-bold">ул. Наливайка, 6</span><br>
+                    </p>
+                    <br>
+                    <p class="text-bold"><a href="tel:+{{ site.tel1 }}">+{{ site.tel1-format }}</a></p>
+                    <p class="text-bold"><a href="tel:+{{ site.tel2 }}">+{{ site.tel2-format }}</a></p>
+                </div>
+            </div>
+            <div class="content_map">
+                <div class="content_map__description">
+                    <h2>Локация 1</h2>
+                    <p>с.Белая, ул.Надежды 6<span>/</span> <br/>
+                        <a class="content_map__link" href="#" onclick="openMapsLink(1); return false;">Проложить маршрут
+                            >></a>
+                    </p>
+                </div>
+                <div class="map">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d165529.21614610223!2d25.574974!3d49.590319!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c15b0c7c49f84e7!2z0JTRltC8INC00LvRjyDQu9GW0YLQvdGW0YUg0LvRjtC00LXQuSAi0KDQvtC00LjQvdC90LUg0YLQtdC_0LvQviI!5e0!3m2!1suk!2sua!4v1669134702661!5m2!1suk!2sua" width="800" height="400" style="border:0; margin-bottom: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                <div class="content_map__description">
+                    <h2>Локация 2</h2>
+                    <p>с.Байковцы, ул.Наливайка 6 <span>/</span> <br/>
+                        <a class="content_map__link" href="#" onclick="openMapsLink(2); return false;">Проложить маршрут
+                            >></a>
+                    </p>
+                </div>
+                 <div class="map">
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85242.87570747315!2d25.544185354853933!3d49.55991976286508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473037f159da8f8f%3A0x51a696145a925f30!2z0JHRg9C00LjQvdC-0Log0L_RgNC10YHRgtCw0YDRltC70LjRhSAi0KDQvtC00LjQvdC90LUg0YLQtdC_0LvQviIsINCi0LXRgNC90L7Qv9GW0LvRjA!5e0!3m2!1suk!2sde!4v1682625045507!5m2!1suk!2sde" width="800" height="400"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

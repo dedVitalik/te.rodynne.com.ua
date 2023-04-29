@@ -1,0 +1,17 @@
+<section class="breadcrumbs">
+  <div class="breadcrumbs__body _container">
+    <div class="breadcrumbs__title section-title">
+      <h2>{% if page.breadcrumbs %}{{ page.breadcrumbs }}{% else %}{{ page.title }}{% endif %}</h2>
+    </div>
+     <div class="breadcrumbs__main">
+       <ul class="breadcrumbs__list">
+         <li class="breadcrumbs__item">
+           <a href="/ru">Главная Страница</a>
+         </li>
+         <li class="breadcrumbs__current">
+           <span>{% if page.breadcrumbs %}{{ page.breadcrumbs }}{% else %}{{ page.title }}{% endif %}</span>
+         </li>
+       </ul>
+     </div>
+  </div>
+</section>

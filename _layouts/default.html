@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="uk">
+  {% include head.html %}
+  <body class="preload">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZCM86S"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="wrapper">
+      {% include header.html %} {% if page.url != '/' %} {% include breadcrumbs.html %} {% endif' %} {{ content }} {%
+      include footer.html %}
+    </div>
+    <script src="/js/main.min.js"></script>
+  </body>
+</html>

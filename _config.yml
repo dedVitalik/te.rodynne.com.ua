@@ -1,0 +1,22 @@
+title: Родинне тепло
+description: Родинне тепло - достойна старість для Ваших батьків
+tel1: 380507325247
+tel1-format: 380&nbsp;50&nbsp;732&nbsp;52&nbsp;47
+tel2: 380966046356
+tel2-format: 380&nbsp;96&nbsp;604&nbsp;63&nbsp;56
+whatsapp: https://wa.me/380682865172
+viber: https://mssg.me/r/w/m/6309d157d877ab1bd84bdc0b
+
+incremental: true
+
+exclude:
+  - /js/!main.min.js
+  - /js/main - Copy.js
+  - /source/
+  - gulpfile.js
+  - package.json
+  - README.md
+  - .gitignore
+  - .DS_Store
+  - .editorconfig
+  - package-lock.json
