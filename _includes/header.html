@@ -16,32 +16,32 @@
                 <nav class="menu__body">
                     <ul class="menu__list">
                         <li>
-                            <a {% if page.url=='/' %}class="_active"{% endif %} href="/" data-title="головна сторінка">
-                            <span>головна сторінка</span>
+                            <a {% if page.url=='/' %}class="_active" {% endif %} href="/" data-title="головна сторінка">
+                                <span>головна сторінка</span>
                             </a>
                         </li>
                         <li>
-                            <a {% if page.url=='/foto-pansionatu/' %}class="_active"{% endif %}
-                            href="/foto-pansionatu/" data-title="фото пансіонату">
-                            <span>фото пансіонату</span>
+                            <a {% if page.url=='/foto-pansionatu/' %}class="_active" {% endif %}
+                               href="/foto-pansionatu/" data-title="фото пансіонату">
+                                <span>фото пансіонату</span>
                             </a>
                         </li>
                         <li>
-                            <a {% if page.url=='/vidhuky/' %}class="_active"{% endif %} href="/vidhuky/"
-                            data-title="відгуки">
-                            <span>відгуки</span>
+                            <a {% if page.url=='/vidhuky/' %}class="_active" {% endif %} href="/vidhuky/"
+                               data-title="відгуки">
+                                <span>відгуки</span>
                             </a>
                         </li>
                         <li>
-                            <a {% if page.url=='/faqs/' %}class="_active"{% endif %} href="/faqs/" data-title="часті
+                            <a {% if page.url=='/faqs/' %}class="_active" {% endif %} href="/faqs/" data-title="часті
                             питання">
-                            <span>часті питання</span>
+                                <span>часті питання</span>
                             </a>
                         </li>
                         <li>
-                            <a {% if page.url=='/contacts/' %}class="_active"{% endif %} href="/contacts/"
-                            data-title="як нас знайти">
-                            <span>як нас знайти</span>
+                            <a {% if page.url=='/contacts/' %}class="_active" {% endif %} href="/contacts/"
+                               data-title="як нас знайти">
+                                <span>як нас знайти</span>
                             </a>
                         </li>
                     </ul>
@@ -178,19 +178,24 @@
             <img src="/img/header/offer-desktop-ua.png" alt="Акція місяця в Родинне тепло - Київ">
         </picture>
     </div>-->
-<!--    <div class="city__icon">-->
-<!--        <svg viewBox="0 0 32 32">-->
-<!--            <use xlink:href="/img/sprite/sprite-big.svg#location"></use>-->
-<!--        </svg>-->
-<!--    </div>-->
+    <!--    <div class="city__icon">-->
+    <!--        <svg viewBox="0 0 32 32">-->
+    <!--            <use xlink:href="/img/sprite/sprite-big.svg#location"></use>-->
+    <!--        </svg>-->
+    <!--    </div>-->
+    <div class="header__offer-desktop">
+        <a href="/contacts/">
+            <svg viewBox="0 0 4167 1000">
+                <use xlink:href="/img/sprite/sprite-big.svg#locations2desk"></use>
+            </svg>
+        </a>
+    </div>
 </header>
-<!--<div class="header__offer-mobile">
-    <a href="tel:+{{ site.tel1 }}">
-        <picture>
-            <source srcset="/img/header/offer-mob-ua.webp"
-                    type="image/webp"
-            />
-            <img src="/img/header/offer-mob-ua.jpg" alt="Акція місяця в Родинне тепло - Київ">
-        </picture>
+<div class="header__offer-mobile">
+    <a href="/contacts/">
+        <svg viewBox="0 0 4167 2084">
+            <use xlink:href="/img/sprite/sprite-big.svg#locatios2mob"></use>
+        </svg>
     </a>
-</div>-->
+</div>
+

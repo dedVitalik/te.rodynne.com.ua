@@ -2024,6 +2024,7 @@ h6 {
 
 .header__offer-mobile {
     display: block;
+    width: 80%;
 }
 
 
@@ -2033,6 +2034,8 @@ h6 {
         position: absolute;
         bottom: -25px;
         right: 0;
+        width: 416px;
+        height: 208px;
     }
 
     .header__offer-desktop img {

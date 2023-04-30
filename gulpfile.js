@@ -22,6 +22,16 @@ const cleanOldMinCss = () => {
 
 exports.cleanOldMinCss = cleanOldMinCss;
 
+
+const cleanOldFiles = () => {
+  return gulp.src(['css/style.min.css', 'img/sprite/sprite-big.svg', 'js/main.min.js'], {read: false, allowEmpty: true})
+    .pipe(clean());
+}
+
+exports.cleanOldFiles = cleanOldFiles;
+
+
+
 // svg sprite
 
 const svgSprite = () => {
@@ -189,4 +199,4 @@ exports.minifyScripts = minifyScripts;
 
 // Default
 
-exports.default = gulp.series(cleanOldMinCss, svgSprite, minifyStyles, minifyScripts);
+exports.default = gulp.series(cleanOldFiles, svgSprite, minifyStyles, minifyScripts);
