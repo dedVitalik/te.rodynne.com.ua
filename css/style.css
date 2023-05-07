@@ -362,6 +362,7 @@ h6 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    position: relative;
 }
 
 .header__logo {
@@ -915,10 +916,9 @@ h6 {
 }
 
 .footer .cities__list,
-.footer .cities__list a{
+.footer .cities__list a {
     color: #fff;
 }
-
 
 
 .footer .cities__list li {
@@ -2024,23 +2024,34 @@ h6 {
 
 .header__offer-mobile {
     display: block;
-    width: 80%;
 }
 
+.header__offer a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    max-width: 300px;
+    margin-left: auto;
+}
 
 @media (min-width: 768px) {
     .header__offer-desktop {
         display: block;
         position: absolute;
-        bottom: -25px;
-        right: 0;
-        width: 416px;
-        height: 208px;
+        bottom: 0;
+        right: 15px;
     }
 
-    .header__offer-desktop img {
-        font-size: 0;
-        float: right;
+    .header__offer-desktop svg {
+        width: 405px;
+        height: 147px;
+    }
+
+    .header__offer a {
+        max-width: initial;
+        margin-left: initial;
     }
 
     .header__offer-mobile {
@@ -2048,6 +2059,12 @@ h6 {
     }
 
 }
+
+/*@media (min-width: 992px) {*/
+/*    .header__offer-desktop {*/
+/*        right: 15px;*/
+/*    }*/
+/*}*/
 
 /*Кінець Акція header*/
 

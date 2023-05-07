@@ -5,7 +5,6 @@
   "main": "index.html",
   "scripts": {
     "start": "jekyll build && gulp && rimraf _site && jekyll serve"
-
   },
   "author": "dedvitalik",
   "license": "ISC",
